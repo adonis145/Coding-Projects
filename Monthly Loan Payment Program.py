@@ -1,0 +1,15 @@
+#This program will calculate your monthly loan payment.
+print("Welcome to the Loan Program.")
+print()
+print("This program will calculate your monthly loan payments.")
+print()
+Loan_Amount=float(input("Pass the loan amount:"))
+print()
+Annual_Percentage_Rate=float(input("Pass the Annual Percentage Rate:"))
+print()
+Loan_Months=int(input("Pass the number of months:"))
+print()
+APR_Decimal=(Annual_Percentage_Rate)/100
+APR_Math=(APR_Decimal/12)
+Monthly_Payment=(Loan_Amount)*(((APR_Math)*(1+APR_Math)**Loan_Months)/(((1+APR_Math)**Loan_Months)-1))
+print(f'Your monthly payment is {Monthly_Payment:.2f}.')
